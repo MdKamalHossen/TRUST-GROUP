@@ -202,7 +202,7 @@ a.readMore{
     border-radius: 10px;
 }
 #lastStage{
-    background-color: #252829;
+    background-color: #0e1538;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,8 +215,8 @@ a.readMore{
     position: relative;
     text-align: center;
     font-size: 2vw;
-    color: #252829;
-    -webkit-text-stroke:0.3vw #252829;
+    color: #0e1538;;
+    -webkit-text-stroke:0.3vw #0e1538;;
     text-transform: uppercase;
     
 }
@@ -227,7 +227,7 @@ a.readMore{
     left: 0;
     width: 10%;
     height: 100%;
-    color: tomato;
+    color: rgb(1, 136, 160);
     -webkit-text-stroke:#221909;
     border-right: 2px solid;
     overflow: hidden;
@@ -317,4 +317,52 @@ li a{
 #homelist :hover .dropdown-menu{
     display: block;
     transition: all 0.5s ease-in-out;
+}
+#ttti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: #0e1538;
+}
+.box5{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 350px;
+    background: rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius: 5px;
+} 
+.box5 h2{
+    color: #fff;
+    font-size: 9em;
+    position: relative;
+    z-index: 10;
+}
+.box5::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: linear-gradient(#00ccff,#d400d4);
+    animation: animated 4s linear infinite;
+    
+}
+.box5::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #0e1538;
+
+}
+@keyframes animated{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(350deg);
+    }
 }
